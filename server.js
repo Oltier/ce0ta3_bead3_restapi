@@ -16,9 +16,13 @@ store.defineType('todo', {
     date:       {type: String},
     description:    {type: String},
     status:           {type: String},
+    steps: {link: 'step', isArray: true},
 });
 
-
+store.defineType('step', {
+    description: {type: String},
+    difficulty: {type: String},
+});
 
 
 
